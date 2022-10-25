@@ -119,7 +119,7 @@ def processUploadFiles(filename,filesize,files,update,bot,message,thread=None,jd
             host = user_info['moodle_host']
             user = user_info['moodle_user']
             passw = user_info['moodle_password']
-            remotepath = user_info['dir']
+            remotepath = useErrorr_info['dir']
             client = NexCloudClient.NexCloudClient(user,passw,host,proxy=proxy)
             loged = client.login()
             if loged:
@@ -555,7 +555,7 @@ def onmessage(update,bot:ObigramClient):
 
 
 def main():
-    bot_token = "5319520796:AAEknC4qKf3RBTaaEJbunN6v8QFzjsi1AuY"
+    bot_token = "5784401837:AAHlmTWP5lCB-sBGWD9BotuaPvl5StqrF4g"
 
 
     bot = ObigramClient(bot_token)
